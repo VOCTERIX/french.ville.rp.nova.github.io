@@ -3,255 +3,165 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FrenchVilleRP – Ouverture prochaine sur Nova-Life</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
-  <style>
-    /* RESET */
-    *, *::before, *::after {
-      margin: 0; padding: 0; box-sizing: border-box;
-    }
-    html, body {
-      height: 100%;
-      font-family: 'Montserrat', sans-serif;
-      background: linear-gradient(135deg, #0b141b, #1a2a39, #223753);
-      color: #e0e0e0;
-      scroll-behavior: smooth;
-      line-height: 1.6;
-    }
-    a {
-      color: #ff5858;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-    a:hover, a:focus {
-      color: #ff1f1f;
-      outline: none;
-    }
+  <title>FrenchVilleRP - Ouverture Prochaine sur Nova-Life</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Montserrat&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-    /* HEADER */
-    header {
-      position: fixed;
-      top: 0; left: 0; width: 100%;
-      background: rgba(15, 15, 15, 0.9);
-      backdrop-filter: saturate(180%) blur(15px);
-      padding: 20px 50px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 2px 15px rgba(255, 89, 89, 0.3);
-      z-index: 1000;
-    }
-    header h1 {
-      font-family: 'Orbitron', sans-serif;
-      font-weight: 700;
-      font-size: 2.8rem;
-      color: #ff5858;
-      letter-spacing: 3px;
-      user-select: none;
-      text-shadow: 0 0 10px #ff5858;
-    }
-    nav {
-      display: flex;
-      gap: 35px;
-      font-weight: 600;
-      font-size: 1rem;
-      user-select: none;
-    }
-    nav a {
-      cursor: pointer;
-      padding: 6px 8px;
-      border-radius: 6px;
-      transition: background-color 0.3s ease;
-    }
-    nav a:hover, nav a:focus {
-      background-color: rgba(255, 88, 88, 0.25);
-      color: #ff1f1f;
-      outline: none;
-    }
+  <header>
+    <h1>FrenchVilleRP</h1>
+    <nav>
+      <a href="#about">À propos</a>
+      <a href="#features">Fonctionnalités</a>
+      <a href="#events">Événements</a>
+      <a href="#community">Communauté</a>
+      <a href="#team">Équipe</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <a href="#discord">Discord</a>
+    </nav>
+  </header>
 
-    /* MAIN CONTAINER */
-    main {
-      max-width: 1100px;
-      margin: 110px auto 80px;
-      padding: 0 40px;
-    }
+  <main>
 
-    /* SECTIONS */
-    section {
-      margin-bottom: 70px;
-      padding: 0 40px 40px;
-      border-bottom: 1px solid rgba(255, 88, 88, 0.15);
-    }
-    section:last-child {
-      border-bottom: none;
-      margin-bottom: 0;
-      padding-bottom: 0;
-    }
-    h2 {
-      font-family: 'Orbitron', sans-serif;
-      font-weight: 700;
-      font-size: 3rem;
-      color: #ff5858;
-      text-align: center;
-      margin-bottom: 30px;
-      letter-spacing: 2.5px;
-      text-transform: uppercase;
-      text-shadow: 0 0 12px #ff5858;
-      user-select: none;
-    }
-    p {
-      max-width: 900px;
-      margin: 0 auto 22px auto;
-      font-size: 1.15rem;
-      color: #ddd;
-      text-align: justify;
-      padding: 0 10px;
-    }
+    <section id="hero" aria-label="Annonce ouverture serveur">
+      <h2>Ouverture Prochaine sur Nova-Life</h2>
+      <p>
+        FrenchVilleRP arrive bientôt pour vous plonger dans un univers riche et vivant où votre rôle façonnera la ville.
+      </p>
+      <button id="btnMoreInfo">En savoir plus</button>
+    </section>
 
-    /* HERO */
-    #hero {
-      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80') center center/cover no-repeat;
-      min-height: 95vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 0 20px;
-      position: relative;
-      color: white;
-      text-align: center;
-      border-radius: 20px;
-      box-shadow: 0 0 35px rgba(255, 88, 88, 0.7);
-    }
-    #hero::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0,0,0,0.7);
-      border-radius: 20px;
-      z-index: 0;
-    }
-    #hero h2 {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 4.2rem;
-      margin-bottom: 18px;
-      z-index: 1;
-      text-shadow: 0 0 20px #ff5858;
-    }
-    #hero p {
-      font-weight: 500;
-      font-size: 1.5rem;
-      max-width: 720px;
-      margin-bottom: 35px;
-      z-index: 1;
-      line-height: 1.7;
-      text-shadow: 0 0 12px rgba(0,0,0,0.9);
-    }
-    #btn-soon {
-      cursor: default;
-      background-color: #ff5858;
-      border: none;
-      padding: 18px 55px;
-      font-size: 1.3rem;
-      font-weight: 700;
-      color: white;
-      border-radius: 50px;
-      box-shadow: 0 0 25px #ff5858;
-      user-select: none;
-      z-index: 1;
-      animation: pulse 2.5s infinite ease-in-out;
-      border: 2px solid #ff3a3a;
-      transition: box-shadow 0.3s ease;
-    }
-    #btn-soon:hover {
-      box-shadow: 0 0 40px #ff1f1f;
-    }
-    @keyframes pulse {
-      0%, 100% {
-        box-shadow: 0 0 25px #ff5858;
-        opacity: 1;
-      }
-      50% {
-        box-shadow: 0 0 45px #ff1f1f;
-        opacity: 0.85;
-      }
-    }
+    <section id="about">
+      <h2>À propos de FrenchVilleRP</h2>
+      <p>
+        FrenchVilleRP est un serveur de jeu de rôle pensé pour les passionnés de réalisme, d'immersion et de liberté totale.
+        Ici, chaque action a des conséquences, et chaque personnage a son histoire à écrire. 
+        Que vous soyez un citoyen respectueux de la loi, un entrepreneur ambitieux ou un membre des forces de l'ordre, votre place est ici.
+      </p>
+      <p>
+        Basé sur la plateforme Nova-Life, notre serveur offre un environnement stable, performant et constamment amélioré pour une expérience sans égal.
+      </p>
+      <p>
+        Notre communauté dynamique et bienveillante est au cœur du projet, avec des événements réguliers, des interactions poussées et un staff à l’écoute.
+      </p>
+      <p>
+        Nous croyons en un RP authentique où chaque joueur contribue à créer une expérience unique, grâce à un système évolutif et des mécaniques poussées.
+      </p>
+    </section>
 
-    /* FEATURES GRID */
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 36px;
-      margin-top: 45px;
-      user-select: text;
-    }
-    .feature {
-      background: rgba(255, 88, 88, 0.12);
-      border-radius: 16px;
-      padding: 28px 25px;
-      box-shadow: 0 0 30px rgba(255, 88, 88, 0.3);
-      transition: transform 0.35s ease, box-shadow 0.35s ease;
-      cursor: default;
-    }
-    .feature:hover {
-      transform: translateY(-7px);
-      box-shadow: 0 0 45px #ff5858;
-    }
-    .feature h3 {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 1.75rem;
-      color: #ff5858;
-      margin-bottom: 14px;
-      text-shadow: 0 0 8px #ff5858;
-    }
-    .feature p {
-      font-size: 1.07rem;
-      color: #e0e0e0;
-      line-height: 1.5;
-    }
+    <section id="features">
+      <h2>Fonctionnalités clés</h2>
+      <ul class="features-list">
+        <li><strong>Système juridique avancé :</strong> procès RP, juges, avocats, décisions impactantes et sanctions justes.</li>
+        <li><strong>Économie vivante :</strong> gestion complète d'entreprises, banques, prêts, marchés dynamiques pilotés par les joueurs.</li>
+        <li><strong>Multiples carrières :</strong> forces de l'ordre, services médicaux, civils, illégaux, artisans, commerçants, tout est possible.</li>
+        <li><strong>Immersion totale :</strong> météo dynamique, cycles jour/nuit, véhicules réalistes et animations détaillées.</li>
+        <li><strong>Interaction sociale poussée :</strong> alliances, groupes, clans, et diplomatie RP.</li>
+        <li><strong>Support et modération active :</strong> équipe dédiée pour garantir un environnement sain et équitable.</li>
+        <li><strong>Personnalisation des personnages :</strong> skins, vêtements, tatouages, et accessoires variés.</li>
+        <li><strong>Système de logements :</strong> achat, location, personnalisation d’intérieurs et gestion des propriétés.</li>
+      </ul>
+    </section>
 
-    /* COMMUNITY SECTION */
-    #community p {
-      max-width: 850px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+    <section id="events">
+      <h2>Événements et animations</h2>
+      <p>
+        Pour maintenir la vie et l’intérêt sur le serveur, FrenchVilleRP propose une variété d'événements immersifs et communautaires :
+      </p>
+      <ul class="events-list">
+        <li><strong>Élections municipales :</strong> engagez-vous en politique pour faire évoluer la ville.</li>
+        <li><strong>Courses illégales :</strong> sensations fortes dans des courses de rue illégales palpitantes.</li>
+        <li><strong>Fêtes et festivals :</strong> concerts live, marchés nocturnes, animations et concours artistiques.</li>
+        <li><strong>Catastrophes simulées :</strong> tremblements de terre, incendies, inondations qui requièrent coopération et organisation.</li>
+        <li><strong>Concours RP :</strong> récompenses régulières pour les meilleurs rôles et histoires jouées.</li>
+        <li><strong>Soirées à thème :</strong> enquêtes policières, opérations spéciales, courses d’orientation et plus encore.</li>
+      </ul>
+    </section>
 
-    /* DISCORD SECTION */
-    #discord-section {
-      text-align: center;
-      margin-top: 60px;
-    }
-    #discord-section p {
-      max-width: 700px;
-      margin: 0 auto 20px auto;
-      font-size: 1.15rem;
-      color: #ccc;
-    }
-    #discord-widget {
-      margin: 0 auto;
-      max-width: 400px;
-      border-radius: 16px;
-      overflow: hidden;
-      box-shadow: 0 0 35px #ff5858;
-      border: 2px solid #ff5858;
-      height: 500px;
-    }
-    #discord-widget iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-      display: block;
-      border-radius: 16px;
-    }
+    <section id="community">
+      <h2>Une communauté passionnée</h2>
+      <p>
+        La force de FrenchVilleRP, c’est sa communauté. Que vous soyez débutant ou vétéran, vous trouverez votre place parmi nous.
+        Participez aux discussions, trouvez des partenaires RP, ou créez votre propre groupe !
+      </p>
+      <p>
+        Nous mettons un point d’honneur à maintenir un environnement respectueux et chaleureux où chacun peut s’épanouir.
+      </p>
+      <p>
+        Nos forums et notre Discord sont des lieux d’échange et d’entraide actifs, où les joueurs peuvent partager leurs histoires et suggestions.
+      </p>
+    </section>
 
-    /* FOOTER */
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      font-size: 0.95rem;
-      color: #999;
-      border-top: 1px solid #222;
-      user-select: none;
-      font-weight: 500;
-     
+    <section id="team">
+      <h2>Notre équipe</h2>
+      <p>Découvrez les membres passionnés qui animent et maintiennent FrenchVilleRP :</p>
+      <ul class="team-list">
+        <li><strong>Trixll_ytb</strong> - Fondateur</li>
+        <li><strong>Ellie</strong> - Co-fondatrice</li>
+        <li><strong>teykoo.gf</strong> - Co-fondateur</li>
+      </ul>
+      <p>Une équipe soudée, à l’écoute, qui travaille chaque jour pour une expérience optimale.</p>
+    </section>
+
+    <section id="faq">
+      <h2>FAQ - Questions fréquentes</h2>
+      <dl class="faq-list">
+        <dt>Quand ouvrira le serveur ?</dt>
+        <dd>Nous visons une ouverture officielle dans les prochaines semaines, suivez notre Discord pour les annonces.</dd>
+
+        <dt>Comment rejoindre FrenchVilleRP ?</dt>
+        <dd>Le serveur sera accessible via la plateforme Nova-Life. Un tutoriel sera disponible au lancement.</dd>
+
+        <dt>Y a-t-il des règles particulières ?</dt>
+        <dd>Oui, nous demandons un RP respectueux, sans cheat ni comportements toxiques. Le détail complet sera publié prochainement.</dd>
+
+        <dt>Puis-je créer mon propre personnage ?</dt>
+        <dd>Absolument, le système permet une personnalisation avancée pour un RP unique.</dd>
+
+        <dt>Comment contacter le support ?</dt>
+        <dd>Vous pouvez nous écrire via le formulaire de contact ci-dessous, directement sur Discord, ou par email à <a href="mailto:french.ville.rp.nova.life@gmail.com">french.ville.rp.nova.life@gmail.com</a>.</dd>
+      </dl>
+    </section>
+
+    <section id="contact">
+      <h2>Contactez-nous</h2>
+      <p>Une question, une suggestion ou une demande particulière ? N’hésitez pas à nous écrire par mail à <a href="mailto:french.ville.rp.nova.life@gmail.com">french.ville.rp.nova.life@gmail.com</a> ou via le formulaire ci-dessous :</p>
+      <form id="contactForm" action="#" method="post" onsubmit="return handleFormSubmit(event)">
+        <label for="name">Nom :</label><br />
+        <input type="text" id="name" name="name" required placeholder="Votre nom" /><br />
+
+        <label for="email">Email :</label><br />
+        <input type="email" id="email" name="email" required placeholder="exemple@mail.com" /><br />
+
+        <label for="message">Message :</label><br />
+        <textarea id="message" name="message" required placeholder="Votre message ici..." rows="5"></textarea><br />
+
+        <button type="submit">Envoyer</button>
+      </form>
+      <p id="formResponse" aria-live="polite" style="margin-top: 1em;"></p>
+    </section>
+
+    <section id="discord">
+      <h2>Rejoignez-nous sur Discord</h2>
+      <div class="discord-widget">
+        <iframe 
+          src="https://discord.com/widget?id=1395805975490990211&theme=dark" 
+          allowtransparency="true" 
+          frameborder="0" 
+          sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+          ></iframe>
+      </div>
+      <p>Retrouvez toutes les dernières annonces, discussions et supports sur notre serveur Discord officiel.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 FrenchVilleRP — Tous droits réservés</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
