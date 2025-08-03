@@ -1,15 +1,3 @@
-/* ============================= */
-/* FrenchVilleRP - CSS Ultra Long */
-/* ============================= */
-
-/* Reset et base */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
 html {
   font-size: 16px;
@@ -83,12 +71,6 @@ a:focus {
   color: #ff4757;
   text-decoration: underline;
   outline: none;
-}
-
-/* =================== */
-/* Header & Navigation */
-/* =================== */
-
 header {
   background: #222;
   padding: 20px 10px;
@@ -124,11 +106,6 @@ nav ul li a:focus {
     0 0 8px #ff4757,
     0 0 15px #ff4757;
 }
-
-/* =================== */
-/* Sections générales  */
-/* =================== */
-
 section {
   padding: 60px 20px;
   max-width: 1000px;
@@ -147,11 +124,6 @@ section:hover {
     0 0 20px rgba(255, 71, 87, 0.8),
     inset 0 0 15px rgba(255, 71, 87, 0.3);
 }
-
-/* =================== */
-/* Listes personnalisées*/
-/* =================== */
-
 ul, ol, dl {
   margin-left: 20px;
   margin-bottom: 1.5rem;
@@ -194,10 +166,6 @@ dl dd {
   margin-left: 20px;
   color: #bbb;
 }
-
-/* =================== */
-/* Formulaire Contact   */
-/* =================== */
 
 form {
   display: flex;
@@ -265,11 +233,6 @@ button[type="submit"]:focus {
     0 0 30px #ff6f73;
   outline: none;
 }
-
-/* =================== */
-/* Footer              */
-/* =================== */
-
 footer {
   background: #222;
   color: #666;
@@ -281,11 +244,6 @@ footer {
   box-shadow:
     inset 0 1px 3px rgba(255, 71, 87, 0.1);
 }
-
-/* =================== */
-/* Animations          */
-/* =================== */
-
 @keyframes glowPulse {
   0% {
     text-shadow:
@@ -313,11 +271,6 @@ footer {
 h1 {
   animation: glowPulse 3s infinite ease-in-out;
 }
-
-/* =================== */
-/* Responsive          */
-/* =================== */
-
 @media (max-width: 1024px) {
   section {
     padding: 40px 15px;
@@ -361,24 +314,14 @@ h1 {
     font-size: 1.6rem;
   }
 }
-
-/* =================== */
-/* Scroll Smooth & Nav */
-/* =================== */
-
 html {
   scroll-behavior: smooth;
 }
-
-/* =================== */
-/* Scrollbar personnalisé (Webkit) */
-/* =================== */
 
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
 }
-
 ::-webkit-scrollbar-track {
   background: #222;
   border-radius: 8px;
@@ -393,11 +336,6 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #ff6f73;
 }
-
-/* =================== */
-/* Effet bouton sur les liens dans listes */
-/* =================== */
-
 ul li a {
   position: relative;
   color: #ff6f73;
@@ -422,11 +360,6 @@ ul li a:hover::after {
   transform: scaleX(1);
   transform-origin: left;
 }
-
-/* =================== */
-/* Cards and Highlights */
-/* =================== */
-
 .card {
   background: #222;
   padding: 25px;
@@ -444,11 +377,6 @@ ul li a:hover::after {
     0 0 30px #ff4757,
     inset 0 0 15px #ff4757;
 }
-
-/* =================== */
-/* Tables (si besoin)  */
-/* =================== */
-
 table {
   border-collapse: collapse;
   width: 100%;
