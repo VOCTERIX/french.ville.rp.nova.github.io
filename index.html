@@ -3,165 +3,193 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FrenchVilleRP - Ouverture Prochaine sur Nova-Life</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Montserrat&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <title>FrenchVilleRP - Ouverture Prochaine</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Montserrat&display=swap" rel="stylesheet" />
+  <style>
+    /* Minimal inline style pour la lisibilité ici, le gros sera dans le CSS externe */
+    body { font-family: 'Montserrat', sans-serif; background:#111; color:#eee; line-height:1.6; }
+    a { color: #ff4757; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    h1,h2,h3 { font-family: 'Orbitron', sans-serif; }
+    section { padding: 50px 20px; max-width: 1000px; margin: auto; }
+    header, footer { background: #222; padding: 20px; text-align:center; }
+    nav ul { list-style:none; padding:0; margin:0; display:flex; justify-content:center; gap:30px; }
+    nav ul li { }
+    nav ul li a { color:#ff4757; font-weight: 600; font-size: 1.1em; }
+  </style>
 </head>
 <body>
 
-  <header>
-    <h1>FrenchVilleRP</h1>
-    <nav>
-      <a href="#about">À propos</a>
-      <a href="#features">Fonctionnalités</a>
-      <a href="#events">Événements</a>
-      <a href="#community">Communauté</a>
-      <a href="#team">Équipe</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contact">Contact</a>
-      <a href="#discord">Discord</a>
-    </nav>
-  </header>
+<header>
+  <h1>FrenchVilleRP</h1>
+  <nav>
+    <ul>
+      <li><a href="#accueil">Accueil</a></li>
+      <li><a href="#histoire">Histoire</a></li>
+      <li><a href="#caracteristiques">Caractéristiques</a></li>
+      <li><a href="#evenements">Événements</a></li>
+      <li><a href="#guide">Guide du Joueur</a></li>
+      <li><a href="#staff">L'Équipe Staff</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <main>
+<main>
 
-    <section id="hero" aria-label="Annonce ouverture serveur">
-      <h2>Ouverture Prochaine sur Nova-Life</h2>
-      <p>
-        FrenchVilleRP arrive bientôt pour vous plonger dans un univers riche et vivant où votre rôle façonnera la ville.
-      </p>
-      <button id="btnMoreInfo">En savoir plus</button>
-    </section>
+<!-- ACCUEIL -->
+<section id="accueil">
+  <h2>Ouverture Prochaine</h2>
+  <p>
+    Bienvenue à FrenchVilleRP, un serveur de jeu de rôle basé sur la plateforme Nova-Life, qui ouvre très prochainement ses portes aux passionnés de RP en quête d’immersion et d’aventures palpitantes.
+  </p>
+  <p>
+    Notre serveur vous plonge dans une ville fictive et vivante, où chaque joueur contribue à créer une histoire unique, dans un univers cohérent et dynamique. Préparez-vous à découvrir un RP complet, profond et passionnant.
+  </p>
+  <p>
+    L'ouverture officielle est imminente, restez connectés pour ne rien manquer des dernières infos, et rejoignez-nous sur Discord pour suivre toutes les annonces !
+  </p>
+</section>
 
-    <section id="about">
-      <h2>À propos de FrenchVilleRP</h2>
-      <p>
-        FrenchVilleRP est un serveur de jeu de rôle pensé pour les passionnés de réalisme, d'immersion et de liberté totale.
-        Ici, chaque action a des conséquences, et chaque personnage a son histoire à écrire. 
-        Que vous soyez un citoyen respectueux de la loi, un entrepreneur ambitieux ou un membre des forces de l'ordre, votre place est ici.
-      </p>
-      <p>
-        Basé sur la plateforme Nova-Life, notre serveur offre un environnement stable, performant et constamment amélioré pour une expérience sans égal.
-      </p>
-      <p>
-        Notre communauté dynamique et bienveillante est au cœur du projet, avec des événements réguliers, des interactions poussées et un staff à l’écoute.
-      </p>
-      <p>
-        Nous croyons en un RP authentique où chaque joueur contribue à créer une expérience unique, grâce à un système évolutif et des mécaniques poussées.
-      </p>
-    </section>
+<!-- HISTOIRE -->
+<section id="histoire">
+  <h2>Histoire et Contexte de FrenchVille</h2>
+  <p>
+    FrenchVille est une métropole fictive située en France, qui allie modernité et complexité sociale. La ville a connu un passé mouvementé avec des périodes de prospérité et de crises. Son dynamisme économique et culturel en fait un terrain de jeu idéal pour tous types de personnages.
+  </p>
+  <p>
+    Chaque quartier de la ville a son identité propre : des quartiers chics et huppés où vivent les élites, des banlieues populaires pleines de vie, des zones industrielles en pleine mutation, ainsi que des secteurs moins recommandables où règnent gangs et trafics.
+  </p>
+  <p>
+    Cette diversité géographique et sociale est le moteur de nombreuses intrigues et opportunités pour les joueurs qui veulent construire leur avenir dans FrenchVille.
+  </p>
+</section>
 
-    <section id="features">
-      <h2>Fonctionnalités clés</h2>
-      <ul class="features-list">
-        <li><strong>Système juridique avancé :</strong> procès RP, juges, avocats, décisions impactantes et sanctions justes.</li>
-        <li><strong>Économie vivante :</strong> gestion complète d'entreprises, banques, prêts, marchés dynamiques pilotés par les joueurs.</li>
-        <li><strong>Multiples carrières :</strong> forces de l'ordre, services médicaux, civils, illégaux, artisans, commerçants, tout est possible.</li>
-        <li><strong>Immersion totale :</strong> météo dynamique, cycles jour/nuit, véhicules réalistes et animations détaillées.</li>
-        <li><strong>Interaction sociale poussée :</strong> alliances, groupes, clans, et diplomatie RP.</li>
-        <li><strong>Support et modération active :</strong> équipe dédiée pour garantir un environnement sain et équitable.</li>
-        <li><strong>Personnalisation des personnages :</strong> skins, vêtements, tatouages, et accessoires variés.</li>
-        <li><strong>Système de logements :</strong> achat, location, personnalisation d’intérieurs et gestion des propriétés.</li>
-      </ul>
-    </section>
+<!-- CARACTERISTIQUES -->
+<section id="caracteristiques">
+  <h2>Caractéristiques du Serveur</h2>
+  <ul>
+    <li><strong>Ville vivante :</strong> quartiers variés, habitants, commerces et services interactifs.</li>
+    <li><strong>Système juridique poussé :</strong> procès RP, avocats, juges, débats en direct.</li>
+    <li><strong>Forces de l’ordre :</strong> patrouilles, unités spéciales, enquêtes, grades et promotions.</li>
+    <li><strong>Santé et secours :</strong> médecins, ambulanciers, hôpitaux, opérations médicales réalistes.</li>
+    <li><strong>Économie dynamique :</strong> entreprises gérées par les joueurs, banques, marchés et impôts.</li>
+    <li><strong>Faction criminelle :</strong> gangs, trafic, corruption, opérations illégales.</li>
+    <li><strong>Événements réguliers :</strong> festivals, courses, élections, catastrophes simulées.</li>
+    <li><strong>Médias RP :</strong> journaux, radios, influenceurs et publicités par la communauté.</li>
+  </ul>
+  <p>
+    Chaque fonctionnalité est pensée pour renforcer l’immersion et encourager les interactions entre joueurs, pour un RP riche et réaliste.
+  </p>
+</section>
 
-    <section id="events">
-      <h2>Événements et animations</h2>
-      <p>
-        Pour maintenir la vie et l’intérêt sur le serveur, FrenchVilleRP propose une variété d'événements immersifs et communautaires :
-      </p>
-      <ul class="events-list">
-        <li><strong>Élections municipales :</strong> engagez-vous en politique pour faire évoluer la ville.</li>
-        <li><strong>Courses illégales :</strong> sensations fortes dans des courses de rue illégales palpitantes.</li>
-        <li><strong>Fêtes et festivals :</strong> concerts live, marchés nocturnes, animations et concours artistiques.</li>
-        <li><strong>Catastrophes simulées :</strong> tremblements de terre, incendies, inondations qui requièrent coopération et organisation.</li>
-        <li><strong>Concours RP :</strong> récompenses régulières pour les meilleurs rôles et histoires jouées.</li>
-        <li><strong>Soirées à thème :</strong> enquêtes policières, opérations spéciales, courses d’orientation et plus encore.</li>
-      </ul>
-    </section>
+<!-- EVENEMENTS -->
+<section id="evenements">
+  <h2>Événements Hebdomadaires</h2>
+  <p>
+    Pour rythmer la vie de FrenchVille, une multitude d’événements sont organisés régulièrement afin de rassembler la communauté et créer des moments mémorables :
+  </p>
+  <ul>
+    <li><strong>Élections municipales :</strong> élisez vos représentants, débattez et influencez le cours de la ville.</li>
+    <li><strong>Catastrophes naturelles simulées :</strong> inondations, tempêtes, incendies — réagissez en équipe.</li>
+    <li><strong>Fêtes nationales et festivals :</strong> concerts, marchés, animations RP.</li>
+    <li><strong>Braquages spectaculaires :</strong> organisez ou empêchez des attaques en équipe.</li>
+    <li><strong>Courses illégales :</strong> montrez vos talents de pilote dans des courses palpitantes.</li>
+    <li><strong>Concours de drift :</strong> sensations fortes et adrénaline au rendez-vous.</li>
+    <li><strong>Défilés de mode RP :</strong> exprimez votre style et votre créativité.</li>
+    <li><strong>Compétitions sportives :</strong> football, basketball, courses à pied et plus.</li>
+  </ul>
+  <p>
+    Ces événements sont l’occasion de montrer vos compétences, d’affirmer votre rôle dans la communauté, et de vivre des expériences uniques chaque semaine.
+  </p>
+</section>
 
-    <section id="community">
-      <h2>Une communauté passionnée</h2>
-      <p>
-        La force de FrenchVilleRP, c’est sa communauté. Que vous soyez débutant ou vétéran, vous trouverez votre place parmi nous.
-        Participez aux discussions, trouvez des partenaires RP, ou créez votre propre groupe !
-      </p>
-      <p>
-        Nous mettons un point d’honneur à maintenir un environnement respectueux et chaleureux où chacun peut s’épanouir.
-      </p>
-      <p>
-        Nos forums et notre Discord sont des lieux d’échange et d’entraide actifs, où les joueurs peuvent partager leurs histoires et suggestions.
-      </p>
-    </section>
+<!-- GUIDE DU JOUEUR -->
+<section id="guide">
+  <h2>Guide du Joueur</h2>
 
-    <section id="team">
-      <h2>Notre équipe</h2>
-      <p>Découvrez les membres passionnés qui animent et maintiennent FrenchVilleRP :</p>
-      <ul class="team-list">
-        <li><strong>Trixll_ytb</strong> - Fondateur</li>
-        <li><strong>Ellie</strong> - Co-fondatrice</li>
-        <li><strong>teykoo.gf</strong> - Co-fondateur</li>
-      </ul>
-      <p>Une équipe soudée, à l’écoute, qui travaille chaque jour pour une expérience optimale.</p>
-    </section>
+  <h3>Créer son personnage</h3>
+  <p>
+    Choisissez une identité complète avec un passé, des objectifs, et une personnalité forte. Votre personnage est la clé de votre immersion dans FrenchVilleRP.
+  </p>
 
-    <section id="faq">
-      <h2>FAQ - Questions fréquentes</h2>
-      <dl class="faq-list">
-        <dt>Quand ouvrira le serveur ?</dt>
-        <dd>Nous visons une ouverture officielle dans les prochaines semaines, suivez notre Discord pour les annonces.</dd>
+  <h3>Les métiers et activités</h3>
+  <p>
+    Débutez comme livreur, commerçant, policier, médecin, ou même criminel. Évoluez grâce à un système de progression et de réputation.
+  </p>
 
-        <dt>Comment rejoindre FrenchVilleRP ?</dt>
-        <dd>Le serveur sera accessible via la plateforme Nova-Life. Un tutoriel sera disponible au lancement.</dd>
+  <h3>Respect du RP et règles</h3>
+  <p>
+    Le respect des règles RP est primordial. Pas de powergaming, pas de metagaming. Le staff veille à la qualité de l’expérience pour tous.
+  </p>
 
-        <dt>Y a-t-il des règles particulières ?</dt>
-        <dd>Oui, nous demandons un RP respectueux, sans cheat ni comportements toxiques. Le détail complet sera publié prochainement.</dd>
+  <h3>Participer aux événements</h3>
+  <p>
+    Inscrivez-vous aux événements via le Discord officiel et préparez-vous à vivre des moments forts en équipe ou en solo.
+  </p>
 
-        <dt>Puis-je créer mon propre personnage ?</dt>
-        <dd>Absolument, le système permet une personnalisation avancée pour un RP unique.</dd>
+  <h3>Utilisation du Discord</h3>
+  <p>
+    Notre Discord est le cœur de la communauté. Vous y trouverez annonces, discussions, aides et liens utiles.
+  </p>
 
-        <dt>Comment contacter le support ?</dt>
-        <dd>Vous pouvez nous écrire via le formulaire de contact ci-dessous, directement sur Discord, ou par email à <a href="mailto:french.ville.rp.nova.life@gmail.com">french.ville.rp.nova.life@gmail.com</a>.</dd>
-      </dl>
-    </section>
+  <h3>Support et contact</h3>
+  <p>
+    Pour toute question, problème ou suggestion, contactez le staff via <a href="mailto:french.ville.rp.nova.life@gmail.com">french.ville.rp.nova.life@gmail.com</a>.
+  </p>
+</section>
 
-    <section id="contact">
-      <h2>Contactez-nous</h2>
-      <p>Une question, une suggestion ou une demande particulière ? N’hésitez pas à nous écrire par mail à <a href="mailto:french.ville.rp.nova.life@gmail.com">french.ville.rp.nova.life@gmail.com</a> ou via le formulaire ci-dessous :</p>
-      <form id="contactForm" action="#" method="post" onsubmit="return handleFormSubmit(event)">
-        <label for="name">Nom :</label><br />
-        <input type="text" id="name" name="name" required placeholder="Votre nom" /><br />
+<!-- EQUIPE STAFF -->
+<section id="staff">
+  <h2>Notre Équipe Staff</h2>
+  <p>
+    Derrière FrenchVilleRP, une équipe passionnée travaille sans relâche pour vous offrir la meilleure expérience possible.
+  </p>
+  <ul>
+    <li><strong>Trixll_ytb</strong> — Fondateur</li>
+    <li><strong>Ellie Co</strong> — Co-Fondateur</li>
+    <li><strong>teykoo.gf</strong> — Co-Fondateur</li>
+    <li><em>Plus toute une équipe de modérateurs, animateurs, développeurs et créateurs de contenu.</em></li>
+  </ul>
+  <p>
+    N’hésitez pas à nous contacter pour proposer votre aide ou vos idées !
+  </p>
+</section>
 
-        <label for="email">Email :</label><br />
-        <input type="email" id="email" name="email" required placeholder="exemple@mail.com" /><br />
+<!-- FAQ -->
+<section id="faq">
+  <h2>Foire Aux Questions (FAQ)</h2>
+  <dl>
+    <dt>Quand aura lieu l'ouverture officielle ?</dt>
+    <dd>L'ouverture est prévue très prochainement, restez connectés pour la date exacte.</dd>
 
-        <label for="message">Message :</label><br />
-        <textarea id="message" name="message" required placeholder="Votre message ici..." rows="5"></textarea><br />
+    <dt>Comment rejoindre le serveur ?</dt>
+    <dd>Le serveur est accessible via la plateforme Nova-Life, nous communiquerons le lien et les instructions sur Discord et nos réseaux.</dd>
 
-        <button type="submit">Envoyer</button>
-      </form>
-      <p id="formResponse" aria-live="polite" style="margin-top: 1em;"></p>
-    </section>
+    <dt>Quels sont les prérequis pour jouer ?</dt>
+    <dd>Un accès à Nova-Life, un compte Discord pour la communauté, et le respect des règles RP du serveur.</dd>
 
-    <section id="discord">
-      <h2>Rejoignez-nous sur Discord</h2>
-      <div class="discord-widget">
-        <iframe 
-          src="https://discord.com/widget?id=1395805975490990211&theme=dark" 
-          allowtransparency="true" 
-          frameborder="0" 
-          sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
-          ></iframe>
-      </div>
-      <p>Retrouvez toutes les dernières annonces, discussions et supports sur notre serveur Discord officiel.</p>
-    </section>
+    <dt>Y a-t-il un Discord officiel ?</dt>
+    <dd>Oui, retrouvez-nous sur Discord via le widget en bas de page pour échanger avec la communauté et le staff.</dd>
 
-  </main>
+    <dt>Comment contacter le staff ?</dt>
+    <dd>Par mail à <a href="mailto:french.ville.rp.nova.life@gmail.com">french.ville.rp.nova.life@gmail.com</a> ou via Discord.</dd>
+  </dl>
+</section>
 
-  <footer>
-    <p>&copy; 2025 FrenchVilleRP — Tous droits réservés</p>
-  </footer>
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <p>
+    Vous avez une question, une suggestion ou souhaitez rejoindre l'équipe ? N'hésitez pas à nous écrire !
+  </p>
+  <form action="mailto:french.ville.rp.nova.life@gmail.com" method="post" enctype="text/plain">
+    <label for="nom">Nom complet :</label><br />
+    <input type="text" id="nom" name="nom" required placeholder="Votre nom" style="width:100%;padding:10px;margin-bottom:15px;" /><br />
 
-  <script src="script.js"></script>
-</body>
-</html>
+    <label for="email">Adresse e-mail :</label><br />
+    <input type="email" id="email" name="email" required placeholder="Votre e-mail" style="width:100%;padding:10px;margin-bottom:15px;" /><br />
+
+    <label for="message">Message :</label><br />
+    <textarea id="message" name="message
